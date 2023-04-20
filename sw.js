@@ -1,5 +1,5 @@
-const staticCache = 'static-portfolio-v2';
-const dynamicCache = 'dynamic-portfolio-v2';
+const staticCache = 'static-portfolio-v5';
+const dynamicCache = 'dynamic-portfolio-v5';
 
 let assets = [
     'index.html',
