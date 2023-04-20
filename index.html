@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Frontend Developer Olha Voronina">
+    <meta name="theme-color" content="#6356e5" />
+    <title>Voronina</title>
+    <link rel="icon" type="image/png" href="./img/icons/icon-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="./img/icons/icon-256x256.png" sizes="256x256">
+    <link rel="icon" type="image/png" href="./img/icons/icon-384x384.png" sizes="384x384">
+    <link rel="icon" type="image/png" href="./img/icons/icon-512x512.png" sizes="512x512">
+    <link rel="manifest" href="./manifest.json">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Paytone+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="container">
+                <div class="header flex">
+                    <div class="header__logo">
+                        <a href="#">
+                            <img src="./img/logo.png" alt="Logo">
+                        </a>
+                    </div>
+                    <nav>
+                        <ul class="header__menu flex">
+                            <li>
+                                <a href="#">About</a>
+                            </li>
+                            <li>
+                                <a href="#">Service</a>
+                            </li>
+                            <li>
+                                <a href="#">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="#">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__soc-media-links">
+                        <ul class="soc-media-list flex">
+                            <li class="soc-media-list__item flex">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path
+                                            d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5Z" />
+                                    </svg> </a>
+                            </li>
+                            <li class="soc-media-list__item flex">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path
+                                            d="M22.46 6c-.77.35-1.6.58-2.46.69c.88-.53 1.56-1.37 1.88-2.38c-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29c0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15c0 1.49.75 2.81 1.91 3.56c-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07a4.28 4.28 0 0 0 4 2.98a8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56c.84-.6 1.56-1.36 2.14-2.23Z" />
+                                    </svg> </a>
+                            </li>
+                            <li class="soc-media-list__item flex">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path
+                                            d="M6.94 5a2 2 0 1 1-4-.002a2 2 0 0 1 4 .002ZM7 8.48H3V21h4V8.48Zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68Z" />
+                                    </svg> </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="hamburger-menu">
+                        <input id="menu-toggle" type="checkbox" />
+                        <label class='menu-button-container' for="menu-toggle">
+                            <div class='menu-button'></div>
+                        </label>
+                        <ul class="menu">
+                            <li>
+                                <a href="#">About</a>
+                            </li>
+                            <li>
+                                <a href="#">Service</a>
+                            </li>
+                            <li>
+                                <a href="#">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="#">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+                            <li class="soc-media-list__item flex">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path
+                                            d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5Z" />
+                                    </svg> </a>
+                            </li>
+                            <li class="soc-media-list__item flex">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path
+                                            d="M22.46 6c-.77.35-1.6.58-2.46.69c.88-.53 1.56-1.37 1.88-2.38c-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29c0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15c0 1.49.75 2.81 1.91 3.56c-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07a4.28 4.28 0 0 0 4 2.98a8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56c.84-.6 1.56-1.36 2.14-2.23Z" />
+                                    </svg> </a>
+                            </li>
+                            <li class="soc-media-list__item flex">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path
+                                            d="M6.94 5a2 2 0 1 1-4-.002a2 2 0 0 1 4 .002ZM7 8.48H3V21h4V8.48Zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68Z" />
+                                    </svg> </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="main-section">
+                <div class="main-section__container container">
+                    <div class="empty-block-top"></div>
+                    <div class="main-block flex">
+                        <div class="main-block__content">
+                            <h4>
+                                PORTFOLIO
+                            </h4>
+                            <h1>Hello, I'm <br />
+                                Olya Voronina
+                            </h1>
+                            <p class="subtitle">
+                                And I'm a trainee
+                                <span>Frontend Developer</span>
+                            </p>
+                            <div class="main-block__content_btn">
+                                <button class="yellow-btn">About</button>
+                                <button class="border-btn">Download CV</button>
+                            </div>
+                        </div>
+                        <div class="main-block__img">
+                            <img src="./img/svg/main-img-2.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="empty-block-bottom"></div>
+                </div>
+            </section>
+            <section class="expertise-section">
+                <div class="expertise-section__container container">
+                    <div class="section-title flex">
+                        <div class="title">
+                            <h4 class="grey-title">
+                                MY EXPERTISE
+                            </h4>
+                            <h2>
+                                Innovative Solutions
+                            </h2>
+                        </div>
+                        <p class="title__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nisi cum tempore maxime
+                            sunt facilis.
+                        </p>
+                    </div>
+                    <div class="innovative-solutions-list flex">
+                        <div class="grey-block">
+                            <div class="yellow-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M10 9a1 1 0 0 1 1-1a1 1 0 0 1 1 1v4.47l1.21.13l4.94 2.19c.53.24.85.77.85 1.35v4.36c-.03.82-.68 1.47-1.5 1.5H11c-.38 0-.74-.15-1-.43l-4.9-4.2l.74-.77c.19-.21.46-.32.74-.32h.22L10 19V9m1-4a4 4 0 0 1 4 4c0 1.5-.8 2.77-2 3.46v-1.22c.61-.55 1-1.35 1-2.24a3 3 0 0 0-3-3a3 3 0 0 0-3 3c0 .89.39 1.69 1 2.24v1.22C7.8 11.77 7 10.5 7 9a4 4 0 0 1 4-4m0-2a6 6 0 0 1 6 6c0 1.7-.71 3.23-1.84 4.33l-1-.45A5.019 5.019 0 0 0 16 9a5 5 0 0 0-5-5a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58v1.08C6.67 13.83 5 11.61 5 9a6 6 0 0 1 6-6Z" />
+                                </svg>
+                            </div>
+                            <h3>
+                                Interactive UI components
+                            </h3>
+                            <p class="grey-block__text">
+                                Improve user engagement and enhance the overall user experience by implementing
+                                interactive elements such as animations, sliders, and pop-ups using JavaScript libraries
+                                like jQuery and React.
+                            </p>
+                        </div>
+                        <div class="grey-block">
+                            <div class="yellow-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2">
+                                        <path
+                                            d="M4 5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1zm0 3h16M8 4v4" />
+                                        <path d="M9.5 14.5L11 16l3-3" />
+                                    </g>
+                                </svg>
+                            </div>
+                            <h3>
+                                Cross-browser compatibility
+                            </h3>
+                            <p class="grey-block__text">
+                                Provide a consistent experience to all users by testing your website or application on
+                                different browsers and using tools like BrowserStack or CrossBrowserTesting to automate
+                                the testing process. </p>
+                        </div>
+                        <div class="grey-block">
+                            <div class="yellow-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2">
+                                        <path d="M13 15.5V9a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v4" />
+                                        <path
+                                            d="M18 8V5a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h7m5-9h2m-3 10l2 2l4-4" />
+                                    </g>
+                                </svg>
+                            </div>
+                            <h3>
+                                Responsive
+                                design
+                            </h3>
+                            <p class="grey-block__text">
+                                Ensure that your website or application looks great on all devices, regardless of screen
+                                size, by using CSS media queries or frameworks like Bootstrap and Foundation. </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="skills-section">
+                <div class="skills-section__container">
+                    <div class="container flex">
+                        <div class="section-title flex">
+                            <div class="title">
+                                <h4 class="grey-title">
+                                    MY SKILLS
+                                </h4>
+                                <h2 class="beauty-and-exp-header">
+                                    Beautiful and unique experience
+                                </h2>
+                            </div>
+                            <p class="title__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nisi cum tempore
+                                maxime
+                                sunt facilis.
+                            </p>
+                        </div>
+                        <div class="skills-section__items">
+                            <div class="left-row row">
+                                <div class="skill-item flex">
+                                    <div class="skill-item__img">
+                                        <img src="./img/skills-icons/html5-icon.png" alt="HTML">
+                                    </div>
+                                    <p>HTML</p>
+                                </div>
+                                <div class="skill-item flex">
+                                    <div class="skill-item__img">
+                                        <img src="./img/skills-icons/css3-icon.png" alt="CSS">
+                                    </div>
+                                    <p>CSS</p>
+                                </div>
+                            </div>
+                            <div class="right-row row">
+                                <div class="skill-item flex">
+                                    <div class="skill-item__img">
+                                        <img src="./img/skills-icons/js-icon.png" alt="JS">
+                                    </div>
+                                    <p>JavaScript</p>
+                                </div>
+                                <div class="skill-item flex">
+                                    <div class="skill-item__img">
+                                        <img src="./img/skills-icons/react-icon.png" alt="React">
+                                    </div>
+                                    <p>React</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-section-bottom__container">
+                    <div class="container">
+                        <div class="experience-block flex">
+                            <div class="experience-item flex">
+                                <div class="yellow-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                        viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M14.754 10c.966 0 1.75.784 1.75 1.75V15H16.5v1h-9v-3h.002v-1.25c0-.966.783-1.75 1.75-1.75h5.502ZM22 11.75A1.75 1.75 0 0 0 20.25 10h-3.375c.393.475.629 1.085.629 1.75V13H17.5v3h3.75a.75.75 0 0 0 .75-.75v-3.5ZM6.5 15h.002v-3.25l.009-.22a2.72 2.72 0 0 1 .62-1.53H3.75l-.144.006A1.75 1.75 0 0 0 2 11.75v3.5c0 .414.336.75.75.75H6.5v-1ZM12 3a3 3 0 1 1 0 6a3 3 0 0 1 0-6Zm6.5 1a2.5 2.5 0 1 1 0 5a2.5 2.5 0 0 1 0-5Zm-13 0a2.5 2.5 0 1 1 0 5a2.5 2.5 0 0 1 0-5ZM2 17.75a.75.75 0 0 1 .75-.75h18.5a.75.75 0 0 1 .75.75v.5A3.75 3.75 0 0 1 18.25 22H5.75A3.75 3.75 0 0 1 2 18.25v-.5Z" />
+                                    </svg>
+                                </div>
+                                <h2>
+                                    12
+                                </h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, nesciunt.
+                                </p>
+                            </div>
+                            <div class="experience-item flex">
+                                <div class="yellow-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                        viewBox="0 0 24 24">
+                                        <g fill="currentColor">
+                                            <path
+                                                d="M22 8.162v.073c0 .86 0 1.291-.207 1.643c-.207.352-.584.561-1.336.98l-.793.44c.546-1.848.729-3.834.796-5.532l.01-.221l.002-.052c.651.226 1.017.395 1.245.711c.283.393.283.915.283 1.958Zm-20 0v.073c0 .86 0 1.291.207 1.643c.207.352.584.561 1.336.98l.794.44c-.547-1.848-.73-3.834-.797-5.532l-.01-.221l-.001-.052c-.652.226-1.018.395-1.246.711C2 6.597 2 7.12 2 8.162Z" />
+                                            <path fill-rule="evenodd"
+                                                d="M12 2c1.784 0 3.253.157 4.377.347c1.139.192 1.708.288 2.184.874c.476.586.45 1.219.4 2.485c-.172 4.349-1.11 9.78-6.211 10.26V19.5h1.43a1 1 0 0 1 .98.804l.19.946H18a.75.75 0 0 1 0 1.5H6a.75.75 0 0 1 0-1.5h2.65l.19-.946a1 1 0 0 1 .98-.804h1.43v-3.534c-5.1-.48-6.038-5.912-6.21-10.26c-.051-1.266-.076-1.9.4-2.485c.475-.586 1.044-.682 2.183-.874A26.374 26.374 0 0 1 12 2Zm.952 4.199l-.098-.176C12.474 5.34 12.284 5 12 5c-.284 0-.474.34-.854 1.023l-.098.176c-.108.194-.162.29-.246.354c-.085.064-.19.088-.4.135l-.19.044c-.738.167-1.107.25-1.195.532c-.088.283.164.577.667 1.165l.13.152c.143.167.215.25.247.354c.032.104.021.215 0 .438l-.02.203c-.076.785-.114 1.178.115 1.352c.23.174.576.015 1.267-.303l.178-.082c.197-.09.295-.135.399-.135c.104 0 .202.045.399.135l.178.082c.691.319 1.037.477 1.267.303c.23-.174.191-.567.115-1.352l-.02-.203c-.021-.223-.032-.334 0-.438c.032-.103.104-.187.247-.354l.13-.152c.503-.588.755-.882.667-1.165c-.088-.282-.457-.365-1.195-.532l-.19-.044c-.21-.047-.315-.07-.4-.135c-.084-.064-.138-.16-.246-.354Z"
+                                                clip-rule="evenodd" />
+                                        </g>
+                                    </svg>
+                                </div>
+                                <h2>
+                                    8
+                                </h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, nesciunt.
+                                </p>
+                            </div>
+                            <div class="experience-item flex">
+                                <div class="yellow-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                        viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM16 16a.996.996 0 0 1-1.41 0l-3.29-3.29A1 1 0 0 1 11 12V8c0-.55.45-1 1-1s1 .45 1 1v3.59l3 3c.39.39.39 1.02 0 1.41z" />
+                                    </svg>
+                                </div>
+                                <h2>
+                                    345
+                                </h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, nesciunt.
+                                </p>
+                            </div>
+                            <div class="experience-item flex">
+                                <div class="yellow-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                        viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M6.5 20q-2.275 0-3.888-1.575T1 14.575q0-1.95 1.175-3.475T5.25 9.15q.625-2.3 2.5-3.725T12 4q2.925 0 4.963 2.038T19 11q1.725.2 2.863 1.488T23 15.5q0 1.875-1.313 3.188T18.5 20h-12Zm3.85-3.425q.2 0 .375-.063t.325-.212l4.225-4.225q.3-.3.3-.725t-.3-.725q-.3-.3-.725-.3t-.725.3l-3.5 3.5l-1.4-1.4q-.275-.275-.7-.275t-.7.275q-.3.3-.3.725t.3.7L9.65 16.3q.15.15.325.212t.375.063Z" />
+                                    </svg>
+                                </div>
+                                <h2>
+                                    67
+                                </h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, nesciunt.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="portfolio-section">
+                <div class="portfolio-section__container container">
+                    <div class="section-title flex">
+                        <div class="title">
+                            <h4 class="grey-title">
+                                PORTFOLIO
+                            </h4>
+                            <h2>
+                                Featured work
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="portfolio-list">
+                        <div class="portfolio-large-item portItem">
+                            <img src="./img/portfolio/organic-website.webp" alt="website">
+                        </div>
+                        <div class="portfolio-items flex">
+                            <div class="portItem">
+                                <img src="./img/portfolio/furniture-website.webp" alt="website">
+                            </div>
+                            <div class="portItem">
+                                <img src="./img/portfolio/larana-website.webp" alt="website">
+                            </div>
+                            <div class="portItem">
+                                <img src="./img/portfolio/office-website.webp" alt="website">
+                            </div>
+                            <div class=" portItem">
+                                <img src="./img/portfolio/fauget-website.webp" alt="website">
+                            </div>
+                            <div class="portItem">
+                                <img src="./img/portfolio/shop-website.webp" alt="">
+                            </div>
+                            <div class="portItem">
+                                <img src="./img/portfolio/borchelle-website.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-btn flex">
+                        <button class="violet-border-btn"> All Works</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="education-section">
+                <div class="container education-section__container">
+                    <div class="section-title flex">
+                        <div class="title">
+                            <h4 class="grey-title">
+                                MY EXPERIENSE
+                            </h4>
+                            <h2>
+                                Education
+                            </h2>
+                        </div>
+                        <p class="title__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nisi cum tempore maxime
+                            sunt facilis.
+                        </p>
+                    </div>
+                    <div class="education-list top-education-block">
+                        <div class="violet-square square flex">
+                            <div class="white-dot dot"></div>
+                        </div>
+                        <div class="education-block">
+                            <h3>2023</h3>
+                            <div>
+                                <h6>Frontend Advanced, ITEA</h6>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur nostrum nulla
+                                    repellendus accusantium modi deleniti architecto. Cumque recusandae corporis quasi
+                                    doloremque quos dolorum? Deleniti exercitationem libero repellat, modi dicta fugit!
+                                    Odio enim praesentium beatae porro esse molestias alias excepturi similique?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="education-list">
+                        <div class="yellow-square square flex">
+                            <div class="black-dot dot"></div>
+                        </div>
+                        <div class="education-block">
+                            <h3>2022 - 2023</h3>
+                            <div>
+                                <h6>Frontend Pro, ITEA</h6>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur nostrum nulla
+                                    repellendus accusantium modi deleniti architecto. Cumque recusandae corporis quasi
+                                    doloremque quos dolorum? Deleniti exercitationem libero repellat, modi dicta fugit!
+                                    Odio enim praesentium beatae porro esse molestias alias excepturi similique?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="testimonial-section">
+                <div class="container testimonial-section__container">
+                    <div class="section-title flex">
+                        <div class="title">
+                            <h4 class="grey-title">
+                                TESTIMONIAL
+                            </h4>
+                            <h2>
+                                Happy Clients Say
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="testimonial-list">
+                        <div class="grey-block">
+                            <div class="client-info">
+                                <div class="client-img">
+                                    <img src="./img/clients/testimonials-img-1.jpg" alt="Client">
+                                </div>
+                                <p>Andy Brown</p>
+                            </div>
+                            <p class="grey-block__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, labore ex? Ad,
+                                magnam! Atque assumenda sunt corporis incidunt repellendus molestias.
+                            </p>
+                        </div>
+                        <div class="grey-block">
+                            <div class="client-info">
+                                <div class="client-img">
+                                    <img src="./img/clients/testimonials-img-2.jpg" alt="Client">
+                                </div>
+                                <p>Lisa Shadow</p>
+                            </div>
+                            <p class="grey-block__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, labore ex? Ad,
+                                magnam! Atque assumenda sunt corporis incidunt repellendus molestias.
+                            </p>
+                        </div>
+                        <div class="grey-block">
+                            <div class="client-info">
+                                <div class="client-img">
+                                    <img src="./img/clients/testimonials-img-3.jpg" alt="Client">
+                                </div>
+                                <p>Kate Light</p>
+                            </div>
+                            <p class="grey-block__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, labore ex? Ad,
+                                magnam! Atque assumenda sunt corporis incidunt repellendus molestias.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="contacts-section">
+                <div class="contacts-section__container">
+                    <div class="container flex">
+                        <div class="section-title flex contact-title">
+                            <div class="title">
+                                <h4 class="grey-title">
+                                    CONTACT
+                                </h4>
+                                <h2>
+                                    Get In Touch
+                                </h2>
+                            </div>
+                            <p class="title__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nisi cum tempore
+                                maxime
+                                sunt facilis.
+                            </p>
+                        </div>
+                        <form class="contact-form">
+                            <h3>Whant to contact with me?</h3>
+                            <div class="input-field">
+                                <input type="text" placeholder="Your Name">
+                            </div>
+                            <div class="input-field">
+                                <input type="email" placeholder="Your Email">
+                            </div>
+                            <div class="input-field">
+                                <input type="tel" placeholder="Your Telephone">
+                            </div>
+                            <div>
+                                <textarea name="" placeholder="Write message here..."></textarea>
+                            </div>
+                            <button class="submit-btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="social-media">
+                    <div class="container flex">
+                        <div class="social-media__header">
+                            <h2>Social Media</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="social-media__links">
+                            <ul class="social-media__links_nav flex">
+                                <li><a href="#">
+                                        <div class="yellow-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5Z" />
+                                            </svg>
+                                        </div>
+                                    </a></li>
+                                <li><a href="#">
+                                        <div class="yellow-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M22.46 6c-.77.35-1.6.58-2.46.69c.88-.53 1.56-1.37 1.88-2.38c-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29c0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15c0 1.49.75 2.81 1.91 3.56c-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07a4.28 4.28 0 0 0 4 2.98a8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56c.84-.6 1.56-1.36 2.14-2.23Z" />
+                                            </svg>
+                                        </div>
+                                    </a></li>
+                                <li><a href="#">
+                                        <div class="yellow-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M6.94 5a2 2 0 1 1-4-.002a2 2 0 0 1 4 .002ZM7 8.48H3V21h4V8.48Zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68Z" />
+                                            </svg>
+                                        </div>
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container flex">
+                <div class="footer-container">
+                    <div class="footer-column">
+                        <div class="footer-logo">
+                            <img src="./img/logo.png" alt="Logo">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, quam.</p>
+                    </div>
+                    <div class="footer-column">
+                        <ul class="footer-nav">
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Service</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <p class="footer-column__header">CONTACT</p>
+                        <ul class="footer-nav">
+                            <li><a href="tel:+38096623****">+38 (096) 623 ** **</a></li>
+                            <li><a href="#">olya.v*****@gmail.com</a></li>
+                            <li><a href="#">Kyiv, Ukraine</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom__container">
+                <div class="container">
+                    <p>Copyright © 2023. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
