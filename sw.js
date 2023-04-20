@@ -1,5 +1,5 @@
-const staticCacheName = 'static-portfolio-v2';
-const dynamicCacheName = 'dynamic-portfolio-v2';
+const staticCache = 'static-portfolio-v2';
+const dynamicCache = 'dynamic-portfolio-v2';
 
 let assets = [
     'index.html',
@@ -14,16 +14,15 @@ let assets = [
 ];
 
 self.addEventListener('install', async e => {
-    const cache = await caches.open(staticCacheName);
+    const cache = await caches.open(staticCache);
     await cache.addAll(assets);
 });
 
 self.addEventListener('activate', async e => {
-    const cacheNames = await caches.keys();
+    const cache = await caches.keys();
     await Promise.all(
-        cacheNames
-            .filter(name => name !== staticCacheName)
-            .filter(name => name !== dynamicCacheName)
+        cache.filter(name => name !== staticCache)
+            .filter(name => name !== dynamicCache)
             .map(name => caches.delete(name))
     );
 });
@@ -46,7 +45,7 @@ async function cacheFirst(request) {
 };
 
 async function networkFirst(request) {
-    const cache = await caches.open(dynamicCacheName);
+    const cache = await caches.open(dynamicCache);
     try {
         const response = await fetch(request);
         await cache.put(request, response.clone());
@@ -55,4 +54,4 @@ async function networkFirst(request) {
         const cached = await cache.match(request.url);
         return cached || await caches.match('./offline.html')
     }
-}
+};
